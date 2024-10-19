@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>化学测试</title>
+    <script>
+      // 弹框提示
+      window.onload = function () {
+        alert("你好李金阳同学，这是你的化学测试。");
+      };
+
+      // 判断答案是否正确
+      function checkAnswer(question, correctAnswer) {
+        var selectedAnswer = document.querySelector(
+          'input[name="q' + question + '"]:checked'
+        );
+        if (selectedAnswer) {
+          if (selectedAnswer.value === correctAnswer) {
+            alert("第 " + question + " 题正确！");
+          } else {
+            alert("第 " + question + " 题错误！正确答案是：" + correctAnswer);
+          }
+        } else {
+          alert("请选择第 " + question + " 题的答案！");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>化学测试</h1>
+
+    <!-- 第一题 -->
+    <h3>1. 结合朱自清的《荷塘月色》及化学知识判断下列说法正确的是：</h3>
+    <form>
+      <label
+        ><input type="radio" name="q1" value="A" /> A.
+        荷塘上方的薄雾是水蒸气</label
+      ><br />
+      <label
+        ><input type="radio" name="q1" value="B" /> B.
+        月光通过薄雾时产生了丁达尔效应</label
+      ><br />
+      <label
+        ><input type="radio" name="q1" value="C" /> C.
+        薄雾中的微观粒子直径大约是 2.5 pm</label
+      ><br />
+      <label
+        ><input type="radio" name="q1" value="D" /> D.
+        “大漠孤烟直”中的孤烟成分和这种薄雾的成分相同</label
+      ><br />
+      <button type="button" onclick="checkAnswer(1, 'B')">提交答案</button>
+    </form>
+
+    <!-- 第二题 -->
+    <h3>2. 关于氯化铁溶液与氢氧化铁胶体的说法正确的是：</h3>
+    <form>
+      <label
+        ><input type="radio" name="q2" value="A" /> A.
+        分散质微粒直径都在10^-9到10^-7m之间</label
+      ><br />
+      <label
+        ><input type="radio" name="q2" value="B" /> B. 都能发生丁达尔效应</label
+      ><br />
+      <label
+        ><input type="radio" name="q2" value="C" /> C.
+        Fe(OH)3胶体能够使水中悬浮的固体颗粒沉降，达到净水目的</label
+      ><br />
+      <label
+        ><input type="radio" name="q2" value="D" /> D.
+        都是无色透明、均一、稳定的分散系</label
+      ><br />
+      <button type="button" onclick="checkAnswer(2, 'C')">提交答案</button>
+    </form>
+
+    <!-- 第三题 -->
+    <h3>3. 下列现象与胶体知识无关的是：</h3>
+    <form>
+      <label
+        ><input type="radio" name="q3" value="A" /> A.
+        向碳酸氢钠溶液中加入氯化钙溶液时溶液没有浑浊</label
+      ><br />
+      <label
+        ><input type="radio" name="q3" value="B" /> B.
+        夏日的傍晚常常看到万丈霞光穿云而过美不胜收</label
+      ><br />
+      <label
+        ><input type="radio" name="q3" value="C" /> C.
+        食品加工厂利用豆浆中加入盐卤做豆腐</label
+      ><br />
+      <label
+        ><input type="radio" name="q3" value="D" /> D.
+        上海宝钢厂利用静电除尘技术去除废气中的固体悬浮物</label
+      ><br />
+      <button type="button" onclick="checkAnswer(3, 'A')">提交答案</button>
+    </form>
+
+    <!-- 第四题 -->
+    <h3>4. 下列叙述中正确的是：</h3>
+    <form>
+      <label
+        ><input type="radio" name="q4" value="A" /> A.
+        NH3溶于水形成的溶液能导电，所以NH3是电解质</label
+      ><br />
+      <label
+        ><input type="radio" name="q4" value="B" /> B.
+        NaCl和HCI都是电解质，所以熔融 NaCl 与液态Hcl都能导电</label
+      ><br />
+      <label
+        ><input type="radio" name="q4" value="C" /> C.
+        电解质与非电解质的本质区别是在一定条件下能否发生电离</label
+      ><br />
+      <label
+        ><input type="radio" name="q4" value="D" /> D.
+        导电性强的溶液中自由移动离子数目一定比导电性弱的溶液中自由移动离子数目多</label
+      ><br />
+      <button type="button" onclick="checkAnswer(4, 'C')">提交答案</button>
+    </form>
+
+    <!-- 第五题 -->
+    <h3>5. 下列各组物质间的反应不属于离子反应的是：</h3>
+    <form>
+      <label><input type="radio" name="q5" value="A" /> A. 锌和稀硫酸反应</label
+      ><br />
+      <label
+        ><input type="radio" name="q5" value="B" /> B. 铁丝在氧气中燃烧</label
+      ><br />
+      <label
+        ><input type="radio" name="q5" value="C" /> C.
+        氯化钡溶液和硫酸钠溶液反应</label
+      ><br />
+      <label
+        ><input type="radio" name="q5" value="D" /> D.
+        烧碱溶液和硫酸铜溶液反应</label
+      ><br />
+      <button type="button" onclick="checkAnswer(5, 'B')">提交答案</button>
+    </form>
+
+    <!-- 第六题 -->
+    <h3>6. 常温下，下列各组离子在指定溶液中一定能大量共存的是：</h3>
+    <form>
+      <label
+        ><input type="radio" name="q6" value="A" /> A.
+        无色溶液中：K+、Na+、Cu2+、OH-</label
+      ><br />
+      <label
+        ><input type="radio" name="q6" value="B" /> B.
+        在含大量Ca2＋的溶液中：K+、Na+、CI-、OH-</label
+      ><br />
+      <label
+        ><input type="radio" name="q6" value="C" /> C.
+        能与HCO3-反应的溶液中：Na+、NH4+、SO4 2-、Cl-</label
+      ><br />
+      <label
+        ><input type="radio" name="q6" value="D" /> D. 含有大量SO4
+        2-的澄清溶液中：K+、Fe3+、NO3-、Mg2+</label
+      ><br />
+      <button type="button" onclick="checkAnswer(6, 'D')">提交答案</button>
+    </form>
+
+    <!-- 第七题 -->
+    <h3>
+      7. 下列离子在溶液中能大量共存，加OH -有沉淀析出，加H＋能放出气体的是：
+    </h3>
+    <form>
+      <label
+        ><input type="radio" name="q7" value="A" /> A.
+        Na+、Ca2+、CI-、HCO3-</label
+      ><br />
+      <label
+        ><input type="radio" name="q7" value="B" /> B.
+        Ba2+、K+、CI-、NO3-</label
+      ><br />
+      <label
+        ><input type="radio" name="q7" value="C" /> C. Ba2+、NH4+、CO3
+        2-、NO3-</label
+      ><br />
+      <label
+        ><input type="radio" name="q7" value="D" /> D. Na+、Cu2+、CI-、SO4
+        2-</label
+      ><br />
+      <button type="button" onclick="checkAnswer(7, 'A')">提交答案</button>
+    </form>
+  </body>
+</html>
